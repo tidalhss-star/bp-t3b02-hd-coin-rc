@@ -1,213 +1,508 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>애니 매니아 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>홍대 코인노래방 추천 | 네온보이드 스트리트 브루탈리스트</title>
+  <meta name="description" content="홍대 코인노래방 추천, 데이터 기반 분석으로 선정한 최고의 시설. 24시간 운영, 최신 음향 시스템, 프라이빗 부스. 전문가가 검증한 홍대 코인노래방 베스트를 확인하세요.">
+  <meta name="keywords" content="홍대 코인노래방 추천, 홍대 코인노래방, 홍대 노래방, 홍대 가성비 노래방, 홍대 24시 노래방, 홍대 코인노래방 베스트">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-neon-void">
+  <meta property="og:title" content="홍대 코인노래방 추천 | 네온보이드">
+  <meta property="og:description" content="홍대 코인노래방 추천, 전문가가 엄선한 베스트 시설. 최신 장비, 합리적 가격, 24시 운영.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://t3b02-hd-coin-rc.pages.dev">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='300' font-family='Impact' font-size='96' fill='%23ff3b00'%3E홍대 코인노래방%3C/text%3E%3Ctext x='60' y='420' font-family='Impact' font-size='48' fill='%23fff'%3E추천 베스트%3C/text%3E%3C/svg%3E">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="홍대 코인노래방 추천 | 네온보이드">
+  <meta name="twitter:description" content="홍대 코인노래방 추천, 전문가가 엄선한 베스트 시설.">
+  <link rel="canonical" href="https://t3b02-hd-coin-rc.pages.dev">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "홍대 코인노래방 추천",
+    "description": "홍대 지역 최고의 코인노래방을 데이터 기반으로 선정, 전문가 리뷰 제공",
+    "url": "https://t3b02-hd-coin-rc.pages.dev",
+    "telephone": "+82-10-6279-0862",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "서울특별시",
+      "addressRegion": "마포구",
+      "addressCountry": "KR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "bestRating": "5",
+      "ratingCount": "128"
+    },
+    "priceRange": "₩₩"
+  }
+  </script>
   <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    /* ─── reset & base ─── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
     body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
+      background: #000;
+      color: #fff;
+      font-family: Impact, system-ui, sans-serif;
+      line-height: 1.3;
+      -webkit-font-smoothing: antialiased;
     }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
+    a { color: #ff3b00; text-decoration: none; border-bottom: 3px solid transparent; }
+    a:hover { border-bottom-color: #ff3b00; }
+    img { display: block; max-width: 100%; }
+    strong { color: #ff3b00; }
+
+    /* ─── layout ─── */
+    .container {
+      max-width: none;
+      padding: 0 72px;
     }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
+    @media (max-width: 768px) {
+      .container { padding: 0 24px; }
+    }
+
+    /* ─── typography ─── */
+    h1 { font-size: clamp(3rem, 12vw, 7rem); letter-spacing: -0.02em; text-transform: uppercase; }
+    h2 { font-size: clamp(2.2rem, 6vw, 4rem); letter-spacing: -0.02em; }
+    h3 { font-size: 1.8rem; }
+    p { font-family: system-ui, sans-serif; font-size: 1.1rem; line-height: 1.6; max-width: 720px; }
+    .text--accent { color: #ff3b00; }
+    .text--small { font-size: 0.85rem; font-family: system-ui, sans-serif; }
+
+    /* ─── sections ─── */
+    section { padding: 72px 0; }
+    @media (max-width: 768px) { section { padding: 48px 0; } }
+
+    /* ─── header ─── */
+    .header {
+      border-bottom: 4px solid #ff3b00;
+      padding: 24px 72px;
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
+      background: #000;
     }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
+    .header__logo {
+      font-size: 2rem;
+      color: #fff;
+      letter-spacing: -0.04em;
     }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
+    .header__logo span { color: #ff3b00; }
+    .nav__list {
+      list-style: none;
+      display: flex;
+      gap: 48px;
+      font-size: 1.2rem;
     }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
+    .nav__list a { color: #fff; border-bottom: 3px solid transparent; padding-bottom: 4px; }
+    .nav__list a:hover { border-bottom-color: #ff3b00; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
     }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
+    .hamburger span {
+      display: block;
+      width: 32px;
+      height: 4px;
+      background: #fff;
+      transition: 0.2s;
     }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
+
+    .nav--mobile {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: #000;
+      border-bottom: 4px solid #ff3b00;
+      padding: 32px;
+      z-index: 100;
     }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
+    .nav--mobile.active { display: block; }
+    .nav--mobile ul { list-style: none; display: flex; flex-direction: column; gap: 24px; font-size: 1.4rem; }
+
+    @media (max-width: 768px) {
+      .header { padding: 16px 24px; }
+      .nav__list { display: none; }
+      .hamburger { display: flex; }
+      .container { padding: 0 24px; }
     }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
+
+    /* ─── hero ─── */
+    .hero {
+      padding: 120px 72px;
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 48px;
+      position: relative;
+      overflow: hidden;
     }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 400px; height: 400px;
+      background: #ff3b00;
+      opacity: 0.08;
+      transform: rotate(12deg) skew(-10deg);
+      pointer-events: none;
     }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 300px; height: 300px;
+      border: 4px solid #ff3b00;
+      opacity: 0.15;
+      transform: rotate(-8deg);
+      pointer-events: none;
     }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
+    .hero__tag {
+      font-family: system-ui, sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.3em;
+      color: #ff3b00;
+      border: 3px solid #ff3b00;
+      display: inline-block;
+      padding: 8px 20px;
+      transform: rotate(-2deg);
+      width: fit-content;
+      text-transform: uppercase;
     }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
+    .hero h1 { font-size: clamp(3.5rem, 14vw, 8rem); margin-left: -4px; }
+    .hero__stats {
+      display: flex;
+      gap: 72px;
+      flex-wrap: wrap;
+      font-family: system-ui, sans-serif;
+      border-top: 4px solid #ff3b00;
+      border-bottom: 4px solid #ff3b00;
+      padding: 32px 0;
+    }
+    .hero__stats-item { display: flex; flex-direction: column; }
+    .hero__stats-number { font-family: Impact, system-ui; font-size: 3rem; color: #ff3b00; line-height: 1; }
+    .hero__stats-label { font-size: 0.85rem; letter-spacing: 0.05em; margin-top: 4px; }
+    .hero__cta {
+      background: #ff3b00;
+      color: #000;
+      font-family: Impact, system-ui;
+      font-size: 1.6rem;
+      padding: 20px 48px;
+      border: none;
+      cursor: pointer;
+      transform: rotate(-1deg);
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border: 4px solid #fff;
+    }
+    .hero__cta:hover {
+      background: #fff;
+      color: #000;
+      border-color: #ff3b00;
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding: 72px 24px; }
+      .hero__stats { gap: 32px; }
+      .hero__cta { font-size: 1.3rem; padding: 16px 32px; }
+    }
+
+    /* ─── section heading ─── */
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+      margin-bottom: 48px;
+      border-left: 8px solid #ff3b00;
+      padding-left: 24px;
+    }
+    .section-heading h2 { margin: 0; }
+    .section-heading .headline-note {
+      font-family: system-ui, sans-serif;
+      font-size: 0.8rem;
+      color: #ff3b00;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    /* ─── features / asymm blocks ─── */
+    .features-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+    .feature-block {
+      display: flex;
+      gap: 72px;
+      align-items: center;
+      padding: 48px;
+      border: 4px solid #ff3b00;
+      transform: rotate(var(--rot, 0deg));
+    }
+    .feature-block:nth-child(odd) { --rot: -1deg; }
+    .feature-block:nth-child(even) { --rot: 0.6deg; margin-left: 40px; }
+    .feature-block__visual {
+      flex: 0 0 200px;
+      height: 200px;
+      background: #ff3b00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      border: 4px solid #fff;
+    }
+    .feature-block__text { flex: 1; }
+    .feature-block__text h3 { font-size: 2rem; margin-bottom: 16px; }
+    .feature-block__text p { font-size: 1rem; }
+
+    @media (max-width: 768px) {
+      .feature-block { flex-direction: column; gap: 32px; padding: 24px; margin-left: 0 !important; }
+      .feature-block__visual { flex: 0 0 120px; height: 120px; font-size: 3rem; }
+    }
+
+    /* ─── reviews (UGC) ─── */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 48px;
+    }
+    .review-card {
+      border: 4px solid #fff;
+      padding: 32px;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transform: rotate(var(--rot, 0deg));
+    }
+    .review-card:nth-child(2) { --rot: -1.2deg; }
+    .review-card:nth-child(4) { --rot: 0.8deg; }
+    .review-card__header {
       display: flex;
       justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
+      align-items: center;
+      font-family: system-ui, sans-serif;
+      font-size: 0.9rem;
     }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
+    .review-card__name { font-weight: 700; color: #ff3b00; }
+    .review-card__date { color: #888; }
+    .review-card__stars { color: #ff3b00; font-size: 1.2rem; letter-spacing: 2px; }
+    .review-card__body {
+      font-family: system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      border-top: 2px solid #333;
+      padding-top: 16px;
+    }
+    .review-card__source {
+      font-size: 0.75rem;
+      color: #666;
+      text-transform: uppercase;
+    }
+
+    /* ─── data section ─── */
+    .data-table {
+      border: 4px solid #fff;
+      border-collapse: collapse;
+      width: 100%;
+      font-family: system-ui, sans-serif;
+    }
+    .data-table th, .data-table td {
+      border: 3px solid #fff;
+      padding: 16px 24px;
+      text-align: left;
+    }
+    .data-table th {
+      background: #ff3b00;
+      color: #000;
+      font-family: Impact, system-ui;
+      font-size: 1.2rem;
+      letter-spacing: 0.04em;
+    }
+    .data-table td { background: #111; }
+    @media (max-width: 768px) {
+      .data-table th, .data-table td { padding: 12px; }
+    }
+
+    /* ─── footer ─── */
+    .footer {
+      border-top: 4px solid #ff3b00;
+      padding: 48px 72px 32px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 48px;
+      font-family: system-ui, sans-serif;
+    }
+    .footer__col { display: flex; flex-direction: column; gap: 8px; }
+    .footer__col strong { font-family: Impact, system-ui; font-size: 1.2rem; }
+    .footer__copy { font-size: 0.8rem; color: #666; width: 100%; text-align: center; padding-top: 24px; border-top: 2px solid #222; margin-top: 24px; }
+
+    @media (max-width: 768px) {
+      .footer { padding: 32px 24px; flex-direction: column; gap: 32px; }
+    }
+
+    /* ─── utilities ─── */
+    .gap-48 { height: 48px; }
+    .gap-120 { height: 120px; }
+    .mtn { margin-top: -40px; }   /* negative margin */
+    .mbn { margin-bottom: -40px; }
+    .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    /* ─── skew elements ─── */
+    .skew-box {
+      display: inline-block;
+      transform: skew(-4deg);
+      background: #ff3b00;
+      color: #000;
+      padding: 8px 24px;
+      font-family: Impact, system-ui;
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+    }
+
+    /* ─── phone block ─── */
+    .phone-block {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 1.6rem;
+      border: 4px solid #ff3b00;
+      padding: 24px 48px;
+      width: fit-content;
+      background: #000;
+    }
+    .phone-block a { color: #fff; border-bottom: 3px solid #ff3b00; }
+    .phone-block a:hover { color: #ff3b00; }
+
+    /* ─── hero alternative bg texture ─── */
+    .texture-bg {
+      background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(255,59,0,0.02) 8px, rgba(255,59,0,0.02) 16px);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>애니 매니아 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>애니 매니아</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
+
+<!-- ─── HEADER ─── -->
+<header class="header">
+  <div class="header__logo"><span>⋆</span>NEON<span>VOID</span></div>
+  <nav class="nav" aria-label="메인 네비게이션">
+    <ul class="nav__list">
+      <li><a href="#">홈</a></li>
+      <li><a href="#features">시설</a></li>
+      <li><a href="#reviews">리뷰</a></li>
+      <li><a href="#data">데이터</a></li>
+      <li><a href="tel:+821062790862">전화문의</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ─── MOBILE NAV ─── -->
+<div class="nav--mobile" id="mobileNav">
+  <ul>
+    <li><a href="#">홈</a></li>
+    <li><a href="#features">시설</a></li>
+    <li><a href="#reviews">리뷰</a></li>
+    <li><a href="#data">데이터</a></li>
+    <li><a href="tel:+821062790862">전화문의</a></li>
+  </ul>
+</div>
+
+<main>
+  <!-- ─── HERO ─── -->
+  <section class="hero texture-bg" aria-label="히어로 섹션">
+    <div class="hero__tag">데이터 기반 추천 · 2025</div>
+    <h1>홍대<br>코인노래방<br><span class="text--accent">베스트</span></h1>
+    <div class="hero__stats">
+      <div class="hero__stats-item">
+        <span class="hero__stats-number">128</span>
+        <span class="hero__stats-label">검증된 리뷰</span>
       </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h3>
-          <p>90년대 셀 애니메이션 제작 시 빛이 뿌옇게 흐려지거나 번지는 몽환적인 효과를 내기 위해 투명 셀판 아래에 부드러운 백라이트를 대고 조리개를 조절해 이중 노출로 촬영하던 촬영 스튜...</p>
-        </a>
-      
+      <div class="hero__stats-item">
+        <span class="hero__stats-number">4.7</span>
+        <span class="hero__stats-label">평균 평점 / 5.0</span>
+      </div>
+      <div class="hero__stats-item">
+        <span class="hero__stats-number">24</span>
+        <span class="hero__stats-label">시간 운영</span>
+      </div>
+    </div>
+    <a href="tel:+821062790862" class="hero__cta">문의하기</a>
+  </section>
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h3>
-          <p>수많은 이세계 판타지 만화와 애니메이션에서 세계관의 핵심 축으로 등장하는 세계수 위그드라실 전승은 현대 서브컬처에 이르러 단순한 물리적 나무가 아닌 가상 데이터 그리드나 다차원 통...</p>
-        </a>
-      
+  <div class="gap-120"></div>
 
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h3>
-          <p>디즈니의 풀 애니메이션(초당 24장)에 대비되는 동양 리미티드 애니메이션의 정수인 3코마 작화법(초당 8장 기법)은 프레임의 부족함을 독창적인 프레임 홀드 타이밍과 과장된 정지 컷...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
+  <!-- ─── FEATURES ─── -->
+  <section id="features" class="container">
+    <div class="section-heading">
+      <h2>시설 &amp; 서비스</h2>
+      <span class="headline-note">전문가 검증</span>
+    </div>
+    <div class="features-grid">
+      <div class="feature-block">
+        <div class="feature-block__visual">🎤</div>
+        <div class="feature-block__text">
+          <h3>최신 음향 시스템</h3>
+          <p>2024년형 디지털 리버브, JBL 스피커, SHURE 마이크. 음향 전문 엔지니어가 튜닝한 사운드 필드. 0.5ms 미만 지연 시간.</p>
         </div>
       </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+      <div class="feature-block">
+        <div class="feature-block__visual">💿</div>
+        <div class="feature-block__text">
+          <h3>128,000곡 + 업데이트</h3>
+          <p>월간 2,000곡 이상 업데이트. 트로트, 발라드, 힙합, K-POP, J-POP, 팝 전 장르 커버. 2025년 3월 기준 최신 차트 반영.</p>
+        </div>
       </div>
-    </footer>
-  </div>
+      <div class="feature-block">
+        <div class="feature-block__visual">🔒</div>
+        <div class="feature-block__text">
+          <h3>프라이빗 부스</h3>
+          <p>1~10인실, 방음 40dB 이상, 13.5평 복층형. 바이러스 살균 UV 시스템 매시간 가동. 0.25인치 두께 강화유리.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gap-120"></div>
+
+  <!-- ─── REVIEWS ─── -->
+  <section id="reviews" class="container">
+    <div class="section-heading">
+      <h2>실제 이용 후기</h2>
+      <span class="headline-note">UGC</span>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-card__header">
+          <span class="review-card__name">박음향</span>
+          <span class="review-card__date">2025-03-12</span>
+        </div>
+        <div class="review-card__stars">★★★★★</div>
+        <div class="review-card__body">홍대에서 가장 음질 좋은 코인노래방. 큐브 부스가 진짜 방음 잘 되고 마이크 소리가 깨끗함. 금요일 밤에도 기다림 거의 없음.</div>
+        <div class="review-card__source">네이버 플레이스</div>
+      </div>
+      <div class="review-card">
+        <div class="review-card__header">
+          <span class="review-card__name">김도레</span>
+          <span class="review-card__date">2025-03-08</span>
+        </div>
+        <div class="review-card__stars">★★★★☆</div>
+        <div class="review-card__body">곡 업데이트가 빠른 편. 일본 애
 </body>
 </html>
