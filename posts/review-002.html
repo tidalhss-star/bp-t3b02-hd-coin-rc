@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloudflare 캐시 무효화 47분 지연?… 내 지갑이 울부짖던 그날 밤 (feat. 홍대 코노에서 찾은 위안?)</title>
+  <link rel="canonical" href="t3b02-hd-coin-rc/posts/review-002.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>Cloudflare 캐시 무효화 47분 지연?… 내 지갑이 울부짖던 그날 밤 (feat. 홍대 코노에서 찾은 위안?)</h1>
+    <article>
+      <p><img src="../assets/interior__hero__t1-shiny-room__1344x768__95a76b1d54b62c82.png" alt="데이터 차트와 복잡한 클라우드 아키텍처 다이어그램이 가득한 여러 모니터 앞에서 심각하고 지친 표정으로 앉아있는 재무 담당자의 모습. 한 손에는 커피잔, 다른 손은 키보드 위에 얹혀 있고, 뒤로는 서버 랙들이 희미하게 보인다." loading="lazy" width="1344" height="768"></p>
+<p>아, 정말이지. 클라우드 인프라 담당자들은 가끔 재무팀을 너무 쉽게 보는 경향이 있어. ‘캐시? 그거 그냥 빠르면 좋은 거 아니겠어?’라고들 생각하지만, 우리 입장에선 그 '빠름'과 '정확성'이 곧 돈이거든. 특히 그놈의 Cloudflare Cache Reserve가 특정 엣지에서 벌인 짓은… 정말이지, 내 피 같은 예산을 날려버릴 뻔했지 뭐야.</p>
+<p>### 47분, 그 치명적인 지연의 서막</p>
+<p>때는 2023년 Q3 말이었다. 우리 회사의 핵심 클라우드 자원인 'MegaCloud Instance-M v2'의 예약 인스턴스(RI) 구매를 앞두고 있었어. 대규모 계약이라 단 1%의 가격 변동도 수억 원의 차이를 만들 수 있는 상황이었지. 마침 클라우드 벤더사에서 깜짝 가격 인하 공지를 띄웠어. '다음 주 화요일 오전 10시부터 24시간 동안 특정 리전에서 5% 추가 할인!' 정말이지, 이런 기회는 흔치 않거든.</p>
+<p>우린 이 가격 정보를 실시간으로 받아보는 내부 재무 대시보드 `FinWatch v3.1`을 운영하고 있었어. 이 대시보드는 Cloudflare Cache Reserve를 통해 벤더사 API 응답을 캐싱해서 빠른 로딩 속도를 자랑했지. 문제는 바로 거기서 터졌어.</p>
+<p>### 'ICN POP'의 배신: 캐시 무효화 지연 사태</p>
+<p>새로운 가격 인하 공지가 떴고, 우리 시스템은 즉시 캐시 무효화(Cache Invalidation)를 요청했어. 당연히 최신 가격 정보가 바로 반영될 줄 알았지. 그런데 웬걸? 한참이 지나도 대시보드에는 구닥다리 가격이 그대로 뜨는 거야. ‘이게 무슨…?’</p>
+<p>확인해보니, Cloudflare의 특정 엣지 로케이션, 특히 한국의 `ICN POP (Incheon Point of Presence)`에서 캐시 무효화가 무려 47분이나 지연되는 기이한 현상이 발생하고 있었어. 다른 POP에서는 정상적으로 5분 이내에 반영되는데 말이야. 이 47분 동안 우리 시스템은 최신 가격 인하 정보를 인지하지 못했고, RI 구매 '골든 타임'을 놓칠 위기에 처했던 거지.</p>
+<p>### 피 같은 돈과 스트레스, 그리고 홍대 코노</p>
+<p>그 47분은 정말 지옥 같았어. 5% 할인이면 수십억 원인데, 이 돈이 공중분해될 판이었거든. `Cache-Control: max-age=3600, stale-while-revalidate=60` 같은 헤더를 아무리 잘 설정해도, 엣지 자체의 문제 앞에선 무용지물이었지. 결국, 수동으로 벤더사 API를 직접 호출해서 데이터를 확인하고, 손이 발이 되도록 빌어서 구매 프로세스를 겨우 진행했어. 다행히 아슬아슬하게 할인을 적용받긴 했지만, 그날 밤은 정말이지, 머리가 터질 것 같더라.</p>
+<p>그날 퇴근길에 스트레스 해소랍시고 이성 잃고 찾아간 곳이 바로 **홍대 코인노래방**이었어. 엉망진창인 기분으로 '홍대 코인노래방 추천' 같은 걸 검색해서 한참을 헤매다가, 락 음악만 실컷 부르고 나왔지. 그 좁은 공간에서 47분 동안 내가 잃을 뻔했던 돈을 생각하니, 목소리가 더 크게 나오더라니까. 이래서 기술 스택은 단순히 빠르거나 편리한 걸 넘어, '신뢰성'이 가장 중요한 거야. 특히 돈이 걸린 문제라면 더더욱! Cloudflare Tiered Cache의 동작 방식이나 Durable Objects의 일관성 모델까지 파고들며 멱살 잡고 싶었던 밤이었어. 😡</p>
+    </article>
+  </main>
+</body>
+</html>
