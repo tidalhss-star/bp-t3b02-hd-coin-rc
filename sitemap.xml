@@ -1,39 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b02-hd-coin-rc/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <loc>https://hongdae-song-info.mapo-room-guide.xyz/</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b02-hd-coin-rc/posts/guide-003.html</loc>
-    <lastmod>2026-06-01</lastmod>
+    <loc>https://hongdae-song-info.mapo-room-guide.xyz/about.html</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b02-hd-coin-rc/posts/review-001.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <loc>https://hongdae-song-info.mapo-room-guide.xyz/blog.html</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b02-hd-coin-rc/posts/review-002-1u4eh20.html</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b02-hd-coin-rc/posts/review-002.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tidalhss-star.github.io/bp-t3b02-hd-coin-rc/feed.xml</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
