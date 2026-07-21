@@ -7,10 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: Yeti
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-Sitemap: https://t3b02-hd-coin-rc.pages.dev/sitemap.xml
+Sitemap: https://hongdae-song-info.mapo-room-guide.xyz/sitemap.xml
